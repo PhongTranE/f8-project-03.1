@@ -40,6 +40,7 @@ button {
     width: 173px;
     height: 57px;
     border-radius: 40px;
+    border: 1px solid #143c3c;
     background: var(--primary-color, #143c3c);
     color: #fff;
     text-align: center;
@@ -49,6 +50,7 @@ button {
     line-height: 1.56;
 }
 .btn:hover {
+    opacity: 0.9;
     cursor: pointer;
 }
 
