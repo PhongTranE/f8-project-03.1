@@ -42,7 +42,7 @@ button {
     --height: 57px;
 
     display: inline-block;
-    min-width: 173px;
+    width: 173px;
     height: var(--height);
     padding: 0 20px;
     border-radius: 40px;
@@ -951,10 +951,6 @@ button {
     visibility: hidden;
 }
 
-.section-desc::before {
-    visibility: hidden;
-}
-
 .feature__desc {
     margin-top: 20px;
     width: 547px;
@@ -1003,4 +999,122 @@ button {
     box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
     border: none;
     transform: translateY(-59px);
+}
+
+/* ================================= Blog =================================*/
+.blog {
+    margin-top: 184px;
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__heading::before {
+    right: -36px;
+}
+
+.blog__desc {
+    margin-top: 29px;
+    width: 409px;
+}
+
+.blog__list {
+    margin-top: 90px;
+    display: flex;
+    gap: 30px;
+}
+
+.blog__item {
+    border-radius: 40px 40px 20px 20px;
+    flex: 1;
+    transition: 0.25s;
+}
+
+.blog__body {
+    background: #fff;
+    padding: 26px 14px 12px 0px;
+    border-radius: 0px 0px 20px 20px;
+    height: 204px;
+    position: relative;
+    transition: 0.25s;
+}
+
+.blog__image {
+    height: 317px;
+    border-radius: 40px 40px 0px 0px;
+    overflow: hidden;
+}
+
+.blog__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 40px 40px 0px 0px;
+    transition: 0.25s;
+    display: block;
+    transition: 0.25s;
+}
+
+.blog__img:hover {
+    transform: scale(1.2);
+}
+
+.blog__body {
+    background: #fff;
+    padding: 26px 14px 12px 0px;
+    border-radius: 0px 0px 20px 20px;
+    height: 204px;
+    position: relative;
+    transition: 0.25s;
+}
+
+.blog__body:hover {
+    padding-left: 30px;
+    padding-right: 33px;
+    box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.35);
+}
+
+.blog__body:hover .blog__date {
+    right: 30px;
+    width: calc(100% - 60px);
+}
+.blog__body:hover .blog__btn {
+    background: #143c3c;
+    color: #fff;
+}
+
+.blog__btn {
+    min-width: 107px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 20px;
+    background: #e2eddf;
+    color: #000;
+    padding: 0 33px;
+    transition: 0.25s;
+}
+
+.blog__desc-bold {
+    margin-top: 13px;
+    color: #143c3c;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+.blog__date {
+    color: #575d5e;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    border-top: 1px solid #c4c4c4;
+    padding-top: 15px;
+    width: calc(100% - 23px);
+    text-align: end;
+    position: absolute;
+    bottom: 12px;
+    right: 23px;
+    transition: 0.25s;
 }
