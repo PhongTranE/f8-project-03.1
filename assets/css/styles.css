@@ -839,7 +839,7 @@ button {
 }
 
 .project__heading::before {
-    background: var(--Scondery-color-blue, #83A17D);
+    background: var(--Scondery-color-blue, #83a17d);
 }
 
 .project__desc {
@@ -881,14 +881,7 @@ button {
     position: relative;
 }
 
-.project__thumb {
-    width: 1140px;
-    height: 544px;
-    flex-shrink: 0;
-    object-fit: cover;
-}
-
-.video_button {
+/* .video_button {
     width: 118px;
     height: 118px;
     flex-shrink: 0;
@@ -896,15 +889,30 @@ button {
     position: absolute;
     left: 511px;
     top: 213px;
+} */
+
+.video_button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: 0.25s;
 }
 
-.project__avstract{
+.project__media:hover .video_button {
+    transform: scale(1.1);
+    visibility: hidden;
+}
+
+.project__avstract {
     position: absolute;
     top: -72px;
     right: -55px;
 }
 
-.project__vector{
+.project__vector {
     position: absolute;
     top: -161px;
     right: -55px;
